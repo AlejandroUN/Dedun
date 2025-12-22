@@ -1,0 +1,9 @@
+Tener instalado Python
+Tener instalado MySQL con una base de datos llamada dedun y con la configuración que hay en el config.js del backend
+Tener Node con nvm
+
+Para el backend:
+npm start
+
+Para el frontend:
+npm run serve
