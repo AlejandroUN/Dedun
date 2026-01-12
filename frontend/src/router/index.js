@@ -87,7 +87,6 @@ const routes = [
     name: 'rec}uperarContrasena',
     component: recuperarContrasena
   },
-  
   {
     path: '/introBigFive',
     name: 'introBigFive',

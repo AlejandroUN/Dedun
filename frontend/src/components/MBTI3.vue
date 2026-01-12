@@ -27,14 +27,7 @@
       </header>
 
       <div
-        class="
-          modal modal-signin
-          position-static
-          d-block
-          py-5
-          bg
-          iniciar_sesion_blue_container
-        "
+        class="modal modal-signin position-static d-block py-5 bg iniciar_sesion_blue_container"
         tabindex="-1"
         role="dialog"
         id="modalSignin"
@@ -46,11 +39,11 @@
             </div>
 
             <div class="modal-body p-5 pt-0 fondo3">
-                
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Cuando se trata del trabajo en equipo, tener razón es más importante que ser cooperativo
-                  </label>
+                  Cuando se trata del trabajo en equipo, tener razón es más
+                  importante que ser cooperativo
+                </label>
 
                 <div class="form-check">
                   <input
@@ -83,9 +76,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Cuando hay un debate, te importa más ganarlo que 
-                  asegurarte de que nadie se sienta molesto
-                  </label>
+                  Cuando hay un debate, te importa más ganarlo que asegurarte de
+                  que nadie se sienta molesto
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -118,9 +111,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  En una discusión o debate, debería ser más importante la verdad 
-                  que la susceptibilidad de la gente
-                  </label>
+                  En una discusión o debate, debería ser más importante la
+                  verdad que la susceptibilidad de la gente
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -153,8 +146,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Con frecuencia te resulta difícil entender los sentimientos de otras personas
-                  </label>
+                  Con frecuencia te resulta difícil entender los sentimientos de
+                  otras personas
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -187,8 +181,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Muy raramente te preocupa cómo afectan tus acciones a otras personas
-                  </label>
+                  Muy raramente te preocupa cómo afectan tus acciones a otras
+                  personas
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -221,8 +216,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Como progenitor, preferirías que tu hijo fuera inteligente antes que amable
-                  </label>
+                  Como progenitor, preferirías que tu hijo fuera inteligente
+                  antes que amable
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -256,7 +252,7 @@
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Controlas tus emociones más de lo que ellas a ti
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -289,9 +285,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Consideras que la lógica generalmente es más importante que el corazón 
-                  cuando se trata de tomar decisiones importantes
-                  </label>
+                  Consideras que la lógica generalmente es más importante que el
+                  corazón cuando se trata de tomar decisiones importantes
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -324,9 +320,10 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Si tu amigo se siente triste por algo, es más probable que le 
-                  sugieras formas de tratar el problema a que le ofrezcas apoyo emocional
-                  </label>
+                  Si tu amigo se siente triste por algo, es más probable que le
+                  sugieras formas de tratar el problema a que le ofrezcas apoyo
+                  emocional
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -359,8 +356,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  No buscarías justificar un crimen aunque creas que pudo hacerse por un buen motivo
-                  </label>
+                  No buscarías justificar un crimen aunque creas que pudo
+                  hacerse por un buen motivo
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -391,20 +389,23 @@
                 </div>
               </div>
 
-              <br><br>
+              <br /><br />
 
-              
-              <button v-on:click="setData" class="mb-2 btn btn-md rounded-4 btn-primary floatr right color" type="submit">
+              <button
+                v-on:click="setData"
+                class="mb-2 btn btn-md rounded-4 btn-primary floatr right color"
+                type="submit"
+              >
                 Siguiente
               </button>
-              
 
-              
-              <button v-on:click="setData" class="mb-2 btn btn-md rounded-4 btn-primary floatl right color" type="submit">
+              <button
+                v-on:click="setData"
+                class="mb-2 btn btn-md rounded-4 btn-primary floatl right color"
+                type="submit"
+              >
                 Volver
               </button>
-             
-
             </div>
           </div>
         </div>
@@ -427,12 +428,10 @@ export default {
       think_feel_8: "",
       think_feel_9: "",
       think_feel_10: "",
-      
     };
   },
   methods: {
-    setData(){
-      
+    setData() {
       this.$emit("getData", this.resp);
     },
   },
@@ -440,7 +439,6 @@ export default {
 </script>
 
 <style>
-
 .questions {
   font-size: 150%;
 }

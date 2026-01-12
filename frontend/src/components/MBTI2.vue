@@ -27,27 +27,18 @@
       </header>
 
       <div
-        class="
-          modal modal-signin
-          position-static
-          d-block
-          py-5
-          bg
-          iniciar_sesion_blue_container
-        "
+        class="modal modal-signin position-static d-block py-5 bg iniciar_sesion_blue_container"
         tabindex="-1"
         role="dialog"
         id="modalSignin"
       >
-        <div class="float-none cajitaMIBT" role="document">          
+        <div class="float-none cajitaMIBT" role="document">
           <div class="modal-content rounded-5 shadow">
-
             <div class="modal-header p-5 pb-4 border-bottom-0 fondo3 font">
               <h2 class="fw-bold mb-0">Test MBTI</h2>
             </div>
 
             <div class="modal-body p-5 pt-0 fondo3">
-                
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Te consideras una persona más práctica que creativa</label
@@ -56,9 +47,9 @@
                 <div class="form-check">
                   <input
                     class="form-check-input"
-                    type="radio"                    
+                    type="radio"
                     id="exampleRadios1"
-                    value="0"                    
+                    value="0"
                     v-model="sens_int_1"
                   />
                   <label class="form-check-label" for="exampleRadios1">
@@ -68,7 +59,7 @@
                 <div class="form-check">
                   <input
                     class="form-check-input"
-                    type="radio"                    
+                    type="radio"
                     id="exampleRadios2"
                     value="1"
                     v-model="sens_int_1"
@@ -115,7 +106,8 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Tus sueños tienden a concentrarse en el mundo real y sus acontecimientos</label
+                  Tus sueños tienden a concentrarse en el mundo real y sus
+                  acontecimientos</label
                 >
 
                 <div class="form-check col-9">
@@ -251,7 +243,8 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Por lo general confías más en tu experiencia que en tu imaginación</label
+                  Por lo general confías más en tu experiencia que en tu
+                  imaginación</label
                 >
 
                 <div class="form-check col-9">
@@ -285,7 +278,8 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Normalmente no tienes varias cosas en la cabeza a la vez</label
+                  Normalmente no tienes varias cosas en la cabeza a la
+                  vez</label
                 >
 
                 <div class="form-check col-9">
@@ -385,19 +379,24 @@
                 </div>
               </div>
 
-              <br><br>
+              <br /><br />
 
               <router-link to="/MBTI">
-              <button class="mb-2 btn btn-md rounded-4 btn-primary floatl right color" type="submit">
-                Volver
-              </button>
+                <button
+                  class="mb-2 btn btn-md rounded-4 btn-primary floatl right color"
+                  type="submit"
+                >
+                  Volver
+                </button>
               </router-link>
 
-              
-              <button v-on:click="setData"  class="mb-2 btn btn-md rounded-4 btn-primary floatr right color" type="submit">
+              <button
+                v-on:click="setData"
+                class="mb-2 btn btn-md rounded-4 btn-primary floatr right color"
+                type="submit"
+              >
                 Siguiente
               </button>
-            
             </div>
           </div>
         </div>
@@ -410,7 +409,7 @@
 export default {
   data() {
     return {
-      resp:{
+      resp: {
         resp1: "",
         resp2: "",
         resp3: "",
@@ -421,12 +420,11 @@ export default {
         resp8: "",
         resp9: "",
         resp10: "",
-        }      
+      },
     };
   },
   methods: {
-    setData(){
-      
+    setData() {
       this.$emit("getData", this.resp);
     },
   },
@@ -434,7 +432,6 @@ export default {
 </script>
 
 <style>
-
 .questions {
   font-size: 150%;
 }

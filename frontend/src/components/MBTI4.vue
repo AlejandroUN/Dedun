@@ -27,14 +27,7 @@
       </header>
 
       <div
-        class="
-          modal modal-signin
-          position-static
-          d-block
-          py-5
-          bg
-          iniciar_sesion_blue_container
-        "
+        class="modal modal-signin position-static d-block py-5 bg iniciar_sesion_blue_container"
         tabindex="-1"
         role="dialog"
         id="modalSignin"
@@ -46,12 +39,11 @@
             </div>
 
             <div class="modal-body p-5 pt-0 fondo3">
-                
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Ser capaz de desarrollar un plan y adherirse a él es 
-                  la parte más importante de todo proyecto
-                  </label>
+                  Ser capaz de desarrollar un plan y adherirse a él es la parte
+                  más importante de todo proyecto
+                </label>
 
                 <div class="form-check">
                   <input
@@ -84,9 +76,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Para ti es más importante ser organizado que ser 
-                  capaz de adaptarte a las circunstancias
-                  </label>
+                  Para ti es más importante ser organizado que ser capaz de
+                  adaptarte a las circunstancias
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -119,9 +111,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Tratas de responder a todos tus correos electrónicos lo más pronto 
-                  posible y no soportas una bandeja de entrada descuidada
-                  </label>
+                  Tratas de responder a todos tus correos electrónicos lo más
+                  pronto posible y no soportas una bandeja de entrada descuidada
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -155,7 +147,7 @@
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Es muy raro que hagas algo simplemente por pura curiosidad
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -189,7 +181,7 @@
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Tu casa y tu entorno de trabajo están muy ordenados
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -223,7 +215,7 @@
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Tus planes de viaje generalmente están bien pensados
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -256,9 +248,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Tu estilo de trabajo se parece más a un enfoque metódico y 
+                  Tu estilo de trabajo se parece más a un enfoque metódico y
                   organizado que a rachas aleatorias de mucha energía
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -292,7 +284,7 @@
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
                   Eres más un planificador cuidadoso que un improvisador natural
-                  </label>
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -325,9 +317,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  Prefieres tener que dedicar tiempo a desarrollar un 
-                  plan detallado que improvisar
-                  </label>
+                  Prefieres tener que dedicar tiempo a desarrollar un plan
+                  detallado que improvisar
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -360,9 +352,9 @@
 
               <div class="form-group mb-3">
                 <label class="custom-label col-md-12 questions">
-                  No tienes dificultades para diseñar una agenda personal de actividades y 
-                  adherirte a ella
-                  </label>
+                  No tienes dificultades para diseñar una agenda personal de
+                  actividades y adherirte a ella
+                </label>
 
                 <div class="form-check col-9">
                   <input
@@ -392,19 +384,26 @@
                   </label>
                 </div>
               </div>
-              <br><br>
+              <br /><br />
 
               <router-link to="/entrarPerfil">
-              <button v-on:click="setData" class="mb-2 btn btn-md rounded-4 btn-primary floatr right color" type="submit">
-                Terminar
-              </button>
+                <button
+                  v-on:click="setData"
+                  class="mb-2 btn btn-md rounded-4 btn-primary floatr right color"
+                  type="submit"
+                >
+                  Terminar
+                </button>
               </router-link>
-              
 
               <router-link to="/MBTI3">
-              <button  v-on:click="setData" class="mb-2 btn btn-md rounded-4 btn-primary floatl right color" type="submit">
-                Volver
-              </button>
+                <button
+                  v-on:click="setData"
+                  class="mb-2 btn btn-md rounded-4 btn-primary floatl right color"
+                  type="submit"
+                >
+                  Volver
+                </button>
               </router-link>
             </div>
           </div>
@@ -428,12 +427,10 @@ export default {
       judg_pers_8: "",
       judg_pers_9: "",
       judg_pers_10: "",
-      
     };
   },
   methods: {
-    setData(){
-      
+    setData() {
       this.$emit("getData", this.resp);
     },
   },
@@ -441,7 +438,6 @@ export default {
 </script>
 
 <style>
-
 .questions {
   font-size: 150%;
 }
